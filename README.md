@@ -1,5 +1,5 @@
 
-## spa deploy
+## SPA deploy
 
 > pm2-deploy-react-project
 
