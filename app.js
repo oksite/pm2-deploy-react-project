@@ -13,7 +13,7 @@ var app = express();
 
 // set all proxy 
 app.use('/sapi', proxy({
-  target: 'http://sapi2.haohaoce.com',
+  target: 'http://sapi2.xxx.com',
   changeOrigin: true,
   pathRewrite:{
     '^/sapi' : '/',
@@ -21,7 +21,7 @@ app.use('/sapi', proxy({
 }));
 
 app.use('/upload', proxy({
-  target: 'http://img.hhztest.com/upload',
+  target: 'http://img.xxx.com/upload',
   changeOrigin: true,
   pathRewrite:{
     '^/upload' : '/',
@@ -29,7 +29,7 @@ app.use('/upload', proxy({
 }));
 
 app.use('/Video', proxy({
-  target: 'http://video.hhztest.com/Video',
+  target: 'http://video.xxx.com/Video',
   changeOrigin: true,
   pathRewrite:{
     '^/Video' : '/',
@@ -37,7 +37,7 @@ app.use('/Video', proxy({
 }));
 
 app.use('/jump/', proxy({
-  target: 'http://t.haohaoce.com',
+  target: 'http://t.xxx.com',
   changeOrigin: true,
   pathRewrite:{
     '^/jump' : '/',
